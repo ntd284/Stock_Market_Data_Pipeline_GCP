@@ -1,0 +1,6 @@
+bs4
+vnstock
+pandas
+google-cloud-storage
+pyspark
+google.cloud.pubsub
