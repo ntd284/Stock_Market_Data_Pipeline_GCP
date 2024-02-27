@@ -5,11 +5,3 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 apt-cache policy docker-ce
 sudo apt install docker-ce docker-compose-plugin
-<<<<<<< HEAD
-# sudo usermod -aG docker duong
-# su - duong
-=======
-sudo usermod -aG docker ${USER}
-su - ${USER}
-
->>>>>>> 2ba95d81a82f7258b68c18cf7fe2804996be68b8

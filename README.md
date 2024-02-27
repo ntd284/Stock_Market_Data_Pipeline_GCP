@@ -14,9 +14,11 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 
 1. **Apache Airflow Installation (version 2.8.1):** Make sure you have `Apache Airflow` correctly installed on your virtual machine. 
 
-2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. 
+2. **Docker(version 24.0.2) and Docker compose (version 2.19.1):** Make sure you have `Docker` and `Docker compose` correctly installed on your virtual machine.
 
-3. **Google Cloud Services Setup:** Create and configure the necessary `Google Cloud Service` resources as following:
+3. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. 
+
+4. **Google Cloud Services Setup:** Create and configure the necessary `Google Cloud Service` resources as following:
 
     - **Virtual Machine (VM):** Provision a `virtual machine` instance on `Google Cloud Serice` to serve as your data processing environment.
     - **Google Cloud Storage (GCS):** Set up `Google Cloud Storage` and create the required `buckets` to store your data.
@@ -25,9 +27,26 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
     - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery Table` when new data arrives in `Google Cloud Storage` and is published on `Cloud Pub/Sub`.
     - **Data Studio:** Prepare `Data Studio` for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. 
 
-4. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks.
+5. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks.
 
 These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
+
+1. Download project:
+```
+git clone https://github.com/thinh-vu/vnstock.git
+```
+2. Install Docker, Docker compose:
+```
+sudo ./installdocker.sh
+docker --version
+docker compose version
+```
+3. Build airflow: 
+```
+docker build -t my-airflow .
+docker compose up
+```
+4. Go to http://0.0.0.0:8080 to monitor airflow
 
 ### Process in the Pipeline
 
