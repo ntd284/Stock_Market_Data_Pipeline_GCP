@@ -48,7 +48,16 @@ docker compose version
 docker build -t my-airflow .
 docker compose up
 ```
+- Register GCP account and get Json key.
+
+[cre_iam](doc/images/cre_iam.png)
+[cre_iam](doc/images/credentials.png)
+
 - Go to http://0.0.0.0:8080 to monitor airflow
+
+- Set connection to Gcloud:
+
+[cre_iam](doc/images/connection-gcloud.png)
 
 ### Process in the Pipeline
 
