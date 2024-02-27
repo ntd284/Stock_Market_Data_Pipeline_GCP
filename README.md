@@ -12,7 +12,7 @@ Follow the steps below to setup and run this ETL pipeline.
 
 Before setting up and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
 
-1. **Apache Airflow Installation:** Make sure you have `Apache Airflow` correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
+1. **Apache Airflow Installation (version 2.8.1):** Make sure you have `Apache Airflow` correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
 
 
 2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/).
@@ -73,7 +73,7 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 ![vnstock-pipeline-quarterly](doc/images/quarter.png)
 
-![logfile in dataproc to transform data from Google Cloud Storage to Bigqueery](doc/images/quarter.png)
+![logfile in dataproc to transform data from Google Cloud Storage to Bigqueery](doc/images/bq-yearly.png)
 
 - **Scheduler:** Weekly at 4pm every Friday.
 
@@ -115,6 +115,11 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 ![Alt text](doc/images/looker-3m.png)
 ![Alt text](doc/images/looker-hourly.png)
+
+5. **Reference:**
+- [How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
+- [Pyspark through Dataproc GCP using Airflow](https://ilhamaulanap.medium.com/data-lake-with-pyspark-through-dataproc-gcp-using-airflow-d3d6517f8168)
+- [Install Airflow on Docker](https://www.youtube.com/watch?v=aTaytcxy2Ck&t=318s)
 
 
 # THE END #
