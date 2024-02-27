@@ -12,26 +12,20 @@ Follow the steps below to setup and run this ETL pipeline.
 
 Before setting up and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
 
-1. **Apache Airflow Installation (version 2.8.1):** Make sure you have `Apache Airflow` correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
+1. **Apache Airflow Installation (version 2.8.1):** Make sure you have `Apache Airflow` correctly installed on your virtual machine. 
 
-
-2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/).
+2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. 
 
 3. **Google Cloud Services Setup:** Create and configure the necessary `Google Cloud Service` resources as following:
 
-    - **Virtual Machine (VM):** Provision a `virtual machine` instance on `Google Cloud Serice` to serve as your data processing environment. Refer to the [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances).
+    - **Virtual Machine (VM):** Provision a `virtual machine` instance on `Google Cloud Serice` to serve as your data processing environment.
+    - **Google Cloud Storage (GCS):** Set up `Google Cloud Storage` and create the required `buckets` to store your data.
+    - **Google BigQuery:** Create and configure a `BigQuery dataset` that will serve as your `data warehouse`.
+    - **Cloud Pubsub:** Set up `Cloud Pub/Sub` to record subscribed stock codes and publish them from the Compute Engine.
+    - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery Table` when new data arrives in `Google Cloud Storage` and is published on `Cloud Pub/Sub`.
+    - **Data Studio:** Prepare `Data Studio` for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. 
 
-    - **Google Cloud Storage (GCS):** Set up `Google Cloud Storage` and create the required `buckets` to store your data. Refer to the [Cloud Storage documentation](https://cloud.google.com/storage/docs).
-
-    - **Google BigQuery:** Create and configure a `BigQuery dataset` that will serve as your `data warehouse`. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs).
-
-    - **Cloud Pubsub:** Set up `Cloud Pub/Sub` to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs).
-
-    - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery Table` when new data arrives in `Google Cloud Storage` and is published on `Cloud Pub/Sub`. Refer to the [Cloud Functions documentation](https://cloud.google.com/functions/docs).
-
-    - **Data Studio:** Prepare `Data Studio` for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. Refer to the [Looker Studio](https://developers.google.com/looker-studio).
-
-4. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks. Refer to the [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html).
+4. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks.
 
 These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
 
@@ -61,9 +55,9 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 - **Tasks:** Daily stock data is collected from `vnstock` and processed at hourly intervals from 9am to 4pm in working days, after which the processed data is sent to `Google Cloud Storage`. Furthermore, `email alerts` are triggered to notify successful execution of these tasks.
 
-**Bigquery:** received and presented data.
+- **Bigquery:** received and presented data.
 
-- **Data Format:** `['time', 'ticker', 'close']`.
+- **Data Format:** `['time','open','high','low','close','volume','ticker']`.
 
 ![Alt text](doc/images/bq-daily.png)
 
@@ -117,10 +111,18 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 ![Alt text](doc/images/looker-hourly.png)
 
 5. **Reference:**
-- [How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
-- [Pyspark through Dataproc GCP using Airflow](https://ilhamaulanap.medium.com/data-lake-with-pyspark-through-dataproc-gcp-using-airflow-d3d6517f8168)
-- [Install Airflow on Docker](https://www.youtube.com/watch?v=aTaytcxy2Ck&t=318s)
-
+[1] [How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04).
+[2] [Pyspark through Dataproc GCP using Airflow](https://ilhamaulanap.medium.com/data-lake-with-pyspark-through-dataproc-gcp-using-airflow-d3d6517f8168).
+[3] [Install Airflow on Docker](https://www.youtube.com/watch?v=aTaytcxy2Ck&t=318s).
+[4] [Airflow apache setup](https://github.com/apache/airflow).
+[5] [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/).
+[6] [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances).
+[7] [Cloud Storage documentation](https://cloud.google.com/storage/docs).
+[8] [BigQuery documentation](https://cloud.google.com/bigquery/docs).
+[9] [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs).
+[10] [Cloud Functions documentation](https://cloud.google.com/functions/docs).
+[11] [Looker Studio](https://developers.google.com/looker-studio).
+[12] [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html).
 
 # THE END #
 
