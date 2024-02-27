@@ -1,0 +1,36 @@
+[2024-02-26T15:58:24.423+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: yearly.Send_to_bq manual__2024-02-26T15:42:19.610221+00:00 [queued]>
+[2024-02-26T15:58:24.427+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: yearly.Send_to_bq manual__2024-02-26T15:42:19.610221+00:00 [queued]>
+[2024-02-26T15:58:24.428+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 4
+[2024-02-26T15:58:24.434+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): Send_to_bq> on 2024-02-26 15:42:19.610221+00:00
+[2024-02-26T15:58:24.441+0000] {standard_task_runner.py:60} INFO - Started process 9358 to run task
+[2024-02-26T15:58:24.444+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'yearly', 'Send_to_bq', 'manual__2024-02-26T15:42:19.610221+00:00', '--job-id', '208', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmp6btk9bzg']
+[2024-02-26T15:58:24.446+0000] {standard_task_runner.py:88} INFO - Job 208: Subtask Send_to_bq
+[2024-02-26T15:58:24.480+0000] {task_command.py:423} INFO - Running <TaskInstance: yearly.Send_to_bq manual__2024-02-26T15:42:19.610221+00:00 [running]> on host 756a22f68d7e
+[2024-02-26T15:58:24.533+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong_' AIRFLOW_CTX_DAG_ID='yearly' AIRFLOW_CTX_TASK_ID='Send_to_bq' AIRFLOW_CTX_EXECUTION_DATE='2024-02-26T15:42:19.610221+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-26T15:42:19.610221+00:00'
+[2024-02-26T15:58:24.534+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-26T15:58:24.535+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'gcloud dataproc jobs submit pyspark gs://datastocks123/pyspark_gcs_bq.py --cluster=dataproc --region=us-central1 --project=just-shell-415015']
+[2024-02-26T15:58:24.545+0000] {subprocess.py:86} INFO - Output:
+[2024-02-26T15:58:25.935+0000] {subprocess.py:93} INFO - ERROR: (gcloud.dataproc.jobs.submit.pyspark) You do not currently have an active account selected.
+[2024-02-26T15:58:25.935+0000] {subprocess.py:93} INFO - Please run:
+[2024-02-26T15:58:25.936+0000] {subprocess.py:93} INFO - 
+[2024-02-26T15:58:25.936+0000] {subprocess.py:93} INFO -   $ gcloud auth login
+[2024-02-26T15:58:25.936+0000] {subprocess.py:93} INFO - 
+[2024-02-26T15:58:25.936+0000] {subprocess.py:93} INFO - to obtain new credentials.
+[2024-02-26T15:58:25.936+0000] {subprocess.py:93} INFO - 
+[2024-02-26T15:58:25.937+0000] {subprocess.py:93} INFO - If you have already logged in with a different account, run:
+[2024-02-26T15:58:25.937+0000] {subprocess.py:93} INFO - 
+[2024-02-26T15:58:25.937+0000] {subprocess.py:93} INFO -   $ gcloud config set account ACCOUNT
+[2024-02-26T15:58:25.937+0000] {subprocess.py:93} INFO - 
+[2024-02-26T15:58:25.937+0000] {subprocess.py:93} INFO - to select an already authenticated account to use.
+[2024-02-26T15:58:26.050+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-26T15:58:26.062+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-26T15:58:26.064+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=yearly, task_id=Send_to_bq, execution_date=20240226T154219, start_date=20240226T155824, end_date=20240226T155826
+[2024-02-26T15:58:26.074+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 208 for task Send_to_bq (Bash command failed. The command returned a non-zero exit code 1.; 9358)
+[2024-02-26T15:58:26.093+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-26T15:58:26.114+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
