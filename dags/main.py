@@ -111,11 +111,14 @@ with DAG(
         task_id="Get_stockinfo_oneyear",
         python_callable=stock_storage.stock_oneyear
     )
+    Send_oneyear_gcs = PythonOperator(
+        task_id="Send_oneyear_gcs",
+        python_callable=stock_storage.send_to_gcs
+    )
     Send_to_gcs = PythonOperator(
         task_id="Send_to_gcs",
         python_callable=send_to_gcs
     )
-    
     pyspark_task = DataprocSubmitJobOperator(
         task_id="pyspark_task", job=PYSPARK_JOB, region=REGION, project_id=PROJECT_ID
     )
@@ -128,4 +131,4 @@ with DAG(
 
 Get_stockinfo_oneday >> Send_stockinfo_oneday_gcs >> daily_suc
 Get_stockinfo_hourly >> hourly_suc
-Get_stockinfo_oneyear >> Send_to_gcs >> pyspark_task >> yearly_suc
+Get_stockinfo_oneyear >> Send_oneyear_gcs >> Send_to_gcs >> pyspark_task >> yearly_suc
