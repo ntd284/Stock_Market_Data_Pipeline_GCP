@@ -35,7 +35,7 @@ These prerequisites are essential for setting up and running the VN-Stock Market
 
 - Install the dependencies:
 ```
-git clone https://github.com/thinh-vu/vnstock.git
+git clone https://github.com/ntd284/Stock_Market_Data_Pipeline_GCP
 ```
 - Install Docker, Docker compose:
 ```
