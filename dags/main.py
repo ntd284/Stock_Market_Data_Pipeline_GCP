@@ -61,7 +61,7 @@ default_args = {
 
 with DAG(
         default_args=default_args,
-        dag_id="daily",
+        dag_id="vnstock-pipeline-daily",
         schedule_interval='0 16 * * 1-5',
         catchup=False
 ) as dag_SD:
@@ -90,7 +90,7 @@ with DAG(
 ) as dag_SD:
     
     Get_stockinfo_hourly = PythonOperator(
-        task_id="Get_stockinfo_hourly",
+        task_id="vnstock-pipeline-hourly",
         python_callable=stock_subscribe.get_data_realtime
     )
     hourly_suc = EmailOperator(
@@ -102,7 +102,7 @@ with DAG(
 
 with DAG(
         default_args=default_args,
-        dag_id="yearly",
+        dag_id="vnstock-pipeline-quarterly",
         schedule_interval='0 15 * * 5',
         catchup=False
 ) as dag_SD:
