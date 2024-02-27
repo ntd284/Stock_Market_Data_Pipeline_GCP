@@ -1,0 +1,26 @@
+[2024-02-26T14:12:34.103+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: yearly.Send_to_gcs manual__2024-02-26T14:12:26.604766+00:00 [queued]>
+[2024-02-26T14:12:34.107+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: yearly.Send_to_gcs manual__2024-02-26T14:12:26.604766+00:00 [queued]>
+[2024-02-26T14:12:34.107+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2024-02-26T14:12:34.113+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): Send_to_gcs> on 2024-02-26 14:12:26.604766+00:00
+[2024-02-26T14:12:34.117+0000] {standard_task_runner.py:60} INFO - Started process 735 to run task
+[2024-02-26T14:12:34.121+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'yearly', 'Send_to_gcs', 'manual__2024-02-26T14:12:26.604766+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmp4fie6ms7']
+[2024-02-26T14:12:34.122+0000] {standard_task_runner.py:88} INFO - Job 131: Subtask Send_to_gcs
+[2024-02-26T14:12:34.153+0000] {task_command.py:423} INFO - Running <TaskInstance: yearly.Send_to_gcs manual__2024-02-26T14:12:26.604766+00:00 [running]> on host 756a22f68d7e
+[2024-02-26T14:12:34.196+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong_' AIRFLOW_CTX_DAG_ID='yearly' AIRFLOW_CTX_TASK_ID='Send_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-02-26T14:12:26.604766+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-26T14:12:26.604766+00:00'
+[2024-02-26T14:12:34.197+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-26T14:12:34.198+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'gsutil -o GSUtil:parallel_composite_upload_threshold=150M -m  cp pyspark_gcs_bq.py  gs://datastocks123/']
+[2024-02-26T14:12:34.208+0000] {subprocess.py:86} INFO - Output:
+[2024-02-26T14:12:35.986+0000] {subprocess.py:93} INFO - CommandException: No URLs matched: pyspark_gcs_bq.py
+[2024-02-26T14:12:36.001+0000] {subprocess.py:93} INFO - CommandException: 1 file/object could not be transferred.
+[2024-02-26T14:12:36.214+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-26T14:12:36.224+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-26T14:12:36.225+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=yearly, task_id=Send_to_gcs, execution_date=20240226T141226, start_date=20240226T141234, end_date=20240226T141236
+[2024-02-26T14:12:36.234+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 131 for task Send_to_gcs (Bash command failed. The command returned a non-zero exit code 1.; 735)
+[2024-02-26T14:12:36.247+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-26T14:12:36.267+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

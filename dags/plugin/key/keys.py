@@ -1,4 +1,6 @@
 class token():
     def dictionary_file():
-        return "/home/duong/project-cv/Stock_Market_Data_Pipeline_GCP/file"
+        return "/opt/airflow/dags/file"
+    def file_gcs():
+        return "/opt/airflow/dags/plugin/pyspark_gcs_bq.py"
         

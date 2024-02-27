@@ -3,7 +3,8 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import *
 # from key.keys import token
 
-
+# class pyspark_gcs_bq():
+#     def get_file_gcs_bq():
 spark = (
         SparkSession
         .builder
@@ -37,6 +38,7 @@ stock_info=(
                 .csv(gcs_path)
 )
 # stock_info.printSchema()
+print(stock_info)
 stock_info.createOrReplaceTempView("stock_info")
 query = spark.sql("""   
                         SELECT time,ticker,close,min_volume FROM
@@ -81,9 +83,11 @@ query = spark.sql("""
                             FROM stock_info 
                         )
                         )
-                        WHERE max_diff_close < 10 AND trending > 0 AND min_volume > 1000
+                        WHERE max_diff_close < 10 AND trending > 0 AND min_volume > 2000
                     """)
+# spark.sparkContext.setLogLevel("ERROR")
 query.show()
 # query.write.format("bigquery").option("credentialsFile",f"{token.dictionary_file()}/credentials.json").option("temporaryGcsBucket","gs://datastocks123/").option("table", "just-shell-415015.datastocks123.vnstock_3M").mode('overwrite').save()
 
 query.write.format("bigquery").option("temporaryGcsBucket","datastocks123").option("table", "just-shell-415015.datastocks123.vnstock_3M").mode('overwrite').save()
+

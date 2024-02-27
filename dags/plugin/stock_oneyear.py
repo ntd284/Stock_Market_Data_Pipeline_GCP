@@ -1,6 +1,6 @@
 from vnstock import * 
 import datetime
-from key.keys import token
+from plugin.key.keys import token
 import os
 import csv
 from google.cloud import storage
@@ -27,6 +27,7 @@ class stock_storage():
                         info_stock.to_csv(f"{token.dictionary_file()}/oneyear.csv",mode='a', index=False, header=False)
                 except:
                     pass
+                print(info_stock)
                 print(f"{count-i}/{len(stocks)}: {stocks[i]}")
     def send_to_gcs():
         storage_client = storage.Client()
@@ -35,8 +36,6 @@ class stock_storage():
         blob.upload_from_filename(source_file_name)
         print('upload done')
         return True
-    # stock_oneyear() 
-    send_to_gcs()
 
 
 

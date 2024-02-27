@@ -1,12 +1,12 @@
 from vnstock import * 
 import pandas
-from key.keys import token
+from plugin.key.keys import token
 import datetime
 from google.cloud import pubsub_v1
+import os
 current_date = datetime.datetime.today().strftime("%Y-%m-%d")
 credentials_path = f'{token.dictionary_file()}/credentials.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS']=credentials_path
-
 publisher = pubsub_v1.PublisherClient()
 topic_path= 'projects/just-shell-415015/topics/mod_stock'
 
@@ -27,6 +27,5 @@ class stock_subscribe():
                 future = publisher.publish(topic_path,bytestring)
                 print(f'publish message id {future.result()}')
             
-    get_data_realtime()
     
         
