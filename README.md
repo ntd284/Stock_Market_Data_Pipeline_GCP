@@ -67,8 +67,6 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 ![vnstock-pipeline-quarterly](doc/images/quarter.png)
 
-![logfile in dataproc to transform data from Google Cloud Storage to Bigqueery](doc/images/bq-yearly.png)
-
 - **Scheduler:** Weekly at 4pm every Friday.
 
 - **Task:** The system gathers a year's worth of data and stores in `Google Cloud Storage`. Use `pySpark` and `Dataproc` to process data from `Google Cloud Storage`, then compute the most consistency growing stock codes over the lastest quarter, where stability is defined by an average index increase within a 10% amplitude range and the least volume is 1000 stocks everydays. The results are then sent to `Bigquery` for advanced analysis.
@@ -124,7 +122,6 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 [11] [Looker Studio](https://developers.google.com/looker-studio).
 [12] [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html).
 
-# THE END #
 
 
 
