@@ -1,0 +1,19 @@
+[2024-02-27T07:00:03.061+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hourly.Get_stockinfo_hourly scheduled__2024-02-27T04:00:00+00:00 [queued]>
+[2024-02-27T07:00:03.074+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hourly.Get_stockinfo_hourly scheduled__2024-02-27T04:00:00+00:00 [queued]>
+[2024-02-27T07:00:03.075+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2024-02-27T07:00:03.106+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): Get_stockinfo_hourly> on 2024-02-27 04:00:00+00:00
+[2024-02-27T07:00:03.120+0000] {standard_task_runner.py:60} INFO - Started process 2238 to run task
+[2024-02-27T07:00:03.129+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'hourly', 'Get_stockinfo_hourly', 'scheduled__2024-02-27T04:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpz8k38zr9']
+[2024-02-27T07:00:03.130+0000] {standard_task_runner.py:88} INFO - Job 17: Subtask Get_stockinfo_hourly
+[2024-02-27T07:00:03.200+0000] {task_command.py:423} INFO - Running <TaskInstance: hourly.Get_stockinfo_hourly scheduled__2024-02-27T04:00:00+00:00 [running]> on host 8efdc209c355
+[2024-02-27T07:00:03.321+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong_' AIRFLOW_CTX_DAG_ID='hourly' AIRFLOW_CTX_TASK_ID='Get_stockinfo_hourly' AIRFLOW_CTX_EXECUTION_DATE='2024-02-27T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-27T04:00:00+00:00'
+[2024-02-27T07:00:04.098+0000] {logging_mixin.py:188} INFO - {'ticker': 'FPT', 'time': '2024-02-27 13:59:47', 'price': 107800.0}
+[2024-02-27T07:00:04.208+0000] {logging_mixin.py:188} INFO - publish message id 9369918839768515
+[2024-02-27T07:00:04.942+0000] {logging_mixin.py:188} INFO - {'ticker': 'VIC', 'time': '2024-02-27 13:59:48', 'price': 44600.0}
+[2024-02-27T07:00:04.996+0000] {logging_mixin.py:188} INFO - publish message id 10552642752872208
+[2024-02-27T07:00:05.711+0000] {logging_mixin.py:188} INFO - {'ticker': 'SHB', 'time': '2024-02-27 14:00:01', 'price': 11850.0}
+[2024-02-27T07:00:05.748+0000] {logging_mixin.py:188} INFO - publish message id 10552702479997309
+[2024-02-27T07:00:05.748+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-27T07:00:05.758+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=hourly, task_id=Get_stockinfo_hourly, execution_date=20240227T040000, start_date=20240227T070003, end_date=20240227T070005
+[2024-02-27T07:00:05.795+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-27T07:00:05.820+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
