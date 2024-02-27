@@ -8,7 +8,7 @@ This project contains process for building a pipeline using `Apache Airflow`. Th
 
 Follow the steps below to setup and run this ETL pipeline.
 
-### Prerequisites and Installation
+### Prerequisites and Modules
 
 Before setting up and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
 
@@ -29,24 +29,26 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 
 5. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks.
 
-These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
+These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline.
 
-1. Download project:
+### Setup
+
+- Install the dependencies:
 ```
 git clone https://github.com/thinh-vu/vnstock.git
 ```
-2. Install Docker, Docker compose:
+- Install Docker, Docker compose:
 ```
 sudo ./installdocker.sh
 docker --version
 docker compose version
 ```
-3. Build airflow: 
+- Build airflow: 
 ```
 docker build -t my-airflow .
 docker compose up
 ```
-4. Go to http://0.0.0.0:8080 to monitor airflow
+- Go to http://0.0.0.0:8080 to monitor airflow
 
 ### Process in the Pipeline
 
