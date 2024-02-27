@@ -2,7 +2,7 @@
 
 This project contains process for building a pipeline using `Apache Airflow`. The pipeline extracts data from [vnstock](https://github.com/thinh-vu/vnstock?tab=readme-ov-file) (stock API of TCBS and SSI), transform it, and loads it into a `data warehouse` and `datamart` for business analysis.
 
-![Alt text](doc/images/etlarchitecture.drawio.png)
+![Alt text](doc/images/etlarchitecture.png)
 
 ## Getting Started
 
