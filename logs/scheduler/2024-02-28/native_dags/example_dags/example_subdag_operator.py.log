@@ -1,0 +1,168 @@
+[2024-02-28T07:59:39.610+0000] {processor.py:161} INFO - Started process (PID=63) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T07:59:39.611+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T07:59:39.612+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.612+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T07:59:39.630+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T07:59:39.642+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.642+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T07:59:39.654+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.654+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T07:59:39.657+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.656+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T07:59:39.657+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.657+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T07:59:39.661+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.661+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T07:59:39.664+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.664+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T07:59:39.664+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.664+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T07:59:39.670+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.063 seconds
+[2024-02-28T08:00:10.123+0000] {processor.py:161} INFO - Started process (PID=130) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:00:10.124+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:00:10.125+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.125+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:00:10.141+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:00:10.149+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.149+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:00:10.161+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.161+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:00:10.163+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.163+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:00:10.163+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.163+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:00:10.168+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.168+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:00:10.170+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.170+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:00:10.171+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:10.171+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:00:10.176+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.056 seconds
+[2024-02-28T08:00:40.459+0000] {processor.py:161} INFO - Started process (PID=197) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:00:40.459+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:00:40.460+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:00:40.476+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:00:40.485+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.485+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:00:40.496+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.496+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:00:40.498+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.498+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:00:40.499+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.499+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:00:40.502+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.502+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:00:40.505+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.505+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:00:40.505+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:40.505+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:00:40.512+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.055 seconds
+[2024-02-28T08:01:10.733+0000] {processor.py:161} INFO - Started process (PID=264) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:01:10.734+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:01:10.734+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:01:10.751+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:01:10.759+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.759+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:01:10.770+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.770+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:01:10.772+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.771+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:01:10.772+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.772+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:01:10.776+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.776+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:01:10.778+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.778+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:01:10.779+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:10.778+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:01:10.784+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.053 seconds
+[2024-02-28T08:01:41.168+0000] {processor.py:161} INFO - Started process (PID=331) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:01:41.169+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:01:41.170+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:01:41.186+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:01:41.196+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.195+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:01:41.207+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.207+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:01:41.209+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.209+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:01:41.210+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.210+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:01:41.214+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.214+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:01:41.216+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.216+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:01:41.217+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:41.217+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:01:41.223+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.057 seconds
+[2024-02-28T08:02:11.445+0000] {processor.py:161} INFO - Started process (PID=398) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:02:11.445+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:02:11.446+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.446+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:02:11.463+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:02:11.472+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.471+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:02:11.483+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.483+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:02:11.484+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.484+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:02:11.485+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.485+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:02:11.489+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.489+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:02:11.492+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.491+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:02:11.492+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:11.492+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:02:11.497+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.055 seconds
+[2024-02-28T08:02:41.678+0000] {processor.py:161} INFO - Started process (PID=465) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:02:41.679+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:02:41.680+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:02:41.696+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:02:41.705+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.705+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:02:41.716+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.716+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:02:41.718+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.718+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:02:41.719+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.719+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:02:41.723+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.722+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:02:41.725+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.725+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:02:41.725+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:41.725+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:02:41.731+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.055 seconds
+[2024-02-28T08:03:11.964+0000] {processor.py:161} INFO - Started process (PID=532) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:03:11.964+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:03:11.965+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:11.965+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:03:11.982+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:03:11.991+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:11.991+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:03:12.003+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:12.002+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:03:12.004+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:12.004+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:03:12.005+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:12.005+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:03:12.009+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:12.009+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:03:12.012+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:12.011+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:03:12.012+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:12.012+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:03:12.018+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.057 seconds
+[2024-02-28T08:03:42.112+0000] {processor.py:161} INFO - Started process (PID=600) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:03:42.113+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:03:42.114+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.113+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:03:42.132+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:03:42.141+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.141+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:03:42.152+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.152+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:03:42.154+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.154+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:03:42.155+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.155+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:03:42.158+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.158+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:03:42.161+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.161+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:03:42.161+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:42.161+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:03:42.166+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.057 seconds
+[2024-02-28T08:04:12.189+0000] {processor.py:161} INFO - Started process (PID=667) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:04:12.190+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:04:12.190+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:04:12.207+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:04:12.216+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.216+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:04:12.228+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.227+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:04:12.229+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.229+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:04:12.230+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.230+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:04:12.234+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.234+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:04:12.237+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.237+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:04:12.237+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:12.237+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:04:12.243+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.056 seconds
+[2024-02-28T08:04:42.395+0000] {processor.py:161} INFO - Started process (PID=734) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:04:42.395+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:04:42.396+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.396+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:04:42.413+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:04:42.422+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.422+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:04:42.433+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.433+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:04:42.435+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.435+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:04:42.436+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.436+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:04:42.442+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.442+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:04:42.447+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.447+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:04:42.447+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:42.447+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:04:42.453+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.061 seconds
+[2024-02-28T08:05:12.532+0000] {processor.py:161} INFO - Started process (PID=802) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:05:12.533+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:05:12.534+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.533+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:05:12.551+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:05:12.560+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.560+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:05:12.572+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.572+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:05:12.575+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.574+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:05:12.575+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.575+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:05:12.579+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.579+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:05:12.583+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.583+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:05:12.583+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:12.583+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:05:12.589+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.060 seconds
+[2024-02-28T08:05:42.732+0000] {processor.py:161} INFO - Started process (PID=870) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:05:42.733+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:05:42.733+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.733+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:05:42.749+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:05:42.757+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.757+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:05:42.768+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.768+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:05:42.769+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.769+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:05:42.770+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.770+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:05:42.773+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.773+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:05:42.775+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.775+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:05:42.776+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:42.776+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:05:42.781+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.051 seconds
+[2024-02-28T08:06:12.930+0000] {processor.py:161} INFO - Started process (PID=938) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:06:12.931+0000] {processor.py:830} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-02-28T08:06:12.932+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.932+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:06:12.950+0000] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-02-28T08:06:12.961+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.961+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:06:12.976+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.976+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-02-28T08:06:12.980+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.979+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:06:12.981+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.981+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:06:12.986+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.985+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2024-02-28T08:06:12.989+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.989+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-02-28T08:06:12.989+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:12.989+0000] {dag.py:3823} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-02-28T08:06:12.996+0000] {processor.py:183} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py took 0.069 seconds

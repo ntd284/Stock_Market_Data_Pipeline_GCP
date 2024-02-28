@@ -1,0 +1,1 @@
+[2024-02-28T07:59:43.308+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: yearly.pyspark_task manual__2024-02-27T04:07:57.258294+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

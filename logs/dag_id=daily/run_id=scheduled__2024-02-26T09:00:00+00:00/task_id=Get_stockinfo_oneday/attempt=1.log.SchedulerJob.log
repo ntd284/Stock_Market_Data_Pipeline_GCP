@@ -1,0 +1,1 @@
+[2024-02-28T07:59:43.320+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: daily.Get_stockinfo_oneday scheduled__2024-02-26T09:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

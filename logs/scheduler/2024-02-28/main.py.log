@@ -1,0 +1,137 @@
+[2024-02-28T07:59:37.768+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/main.py
+[2024-02-28T07:59:37.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T07:59:37.773+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:37.772+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T07:59:38.625+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-daily', 'hourly', 'vnstock-pipeline-quarterly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T07:59:38.921+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.921+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:vnstock-pipeline-daily
+[2024-02-28T07:59:38.935+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.935+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:vnstock-pipeline-daily
+[2024-02-28T07:59:38.944+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.944+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:vnstock-pipeline-daily
+[2024-02-28T07:59:38.975+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.974+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:vnstock-pipeline-quarterly
+[2024-02-28T07:59:38.979+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.978+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:vnstock-pipeline-quarterly
+[2024-02-28T07:59:38.983+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.983+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:vnstock-pipeline-quarterly
+[2024-02-28T07:59:38.984+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:38.983+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T07:59:39.000+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.000+0000] {dag.py:3058} INFO - Creating ORM DAG for vnstock-pipeline-quarterly
+[2024-02-28T07:59:39.004+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.004+0000] {dag.py:3058} INFO - Creating ORM DAG for vnstock-pipeline-daily
+[2024-02-28T07:59:39.028+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.028+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 07:00:00+00:00, run_after=2024-02-28 08:00:00+00:00
+[2024-02-28T07:59:39.034+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.034+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T07:59:39.035+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:39.035+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T07:59:39.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.290 seconds
+[2024-02-28T07:59:47.220+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/main.py
+[2024-02-28T07:59:47.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T07:59:47.222+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.222+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T07:59:47.576+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-daily', 'vnstock-pipeline-quarterly', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T07:59:47.592+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.591+0000] {taskinstance.py:2700} ERROR - {'DAG Id': 'daily', 'Task Id': 'Get_stockinfo_oneday', 'Run Id': 'manual__2024-02-27T04:07:56.079551+00:00', 'Hostname': 'eb3fd3a6cdd8', 'External Executor Id': '4fb2e724-dd43-4f70-b223-7416d792d145'}
+[2024-02-28T07:59:47.599+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.598+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=daily, task_id=Get_stockinfo_oneday, execution_date=20240227T040756, start_date=20240227T040758, end_date=20240228T075947
+[2024-02-28T07:59:47.602+0000] {processor.py:791} INFO - Executed failure callback for <TaskInstance: daily.Get_stockinfo_oneday manual__2024-02-27T04:07:56.079551+00:00 [up_for_retry]> in state up_for_retry
+[2024-02-28T07:59:47.605+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.605+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T07:59:47.615+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.615+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 07:00:00+00:00, run_after=2024-02-28 08:00:00+00:00
+[2024-02-28T07:59:47.618+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.618+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T07:59:47.619+0000] {logging_mixin.py:188} INFO - [2024-02-28T07:59:47.619+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T07:59:47.626+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.409 seconds
+[2024-02-28T08:00:18.312+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:00:18.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:00:18.316+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:18.316+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:00:18.666+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-quarterly', 'vnstock-pipeline-daily', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:00:18.680+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:18.680+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:00:18.690+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:18.690+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:00:18.692+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:18.692+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:00:18.693+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:18.693+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:00:18.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.394 seconds
+[2024-02-28T08:00:49.619+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:00:49.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:00:49.622+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:49.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:00:49.982+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-daily', 'vnstock-pipeline-quarterly', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:00:49.996+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:49.996+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:00:50.006+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:50.006+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:00:50.008+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:50.008+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:00:50.010+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:00:50.010+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:00:50.017+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.402 seconds
+[2024-02-28T08:01:21.028+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:01:21.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:01:21.031+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:21.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:01:21.284+0000] {processor.py:840} INFO - DAG(s) 'hourly', 'vnstock-pipeline-daily', 'vnstock-pipeline-quarterly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:01:21.388+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:21.388+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:01:21.399+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:21.399+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:01:21.401+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:21.401+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:01:21.403+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:21.403+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:01:21.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.388 seconds
+[2024-02-28T08:01:52.381+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:01:52.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:01:52.384+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:52.383+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:01:52.735+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-quarterly', 'vnstock-pipeline-daily', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:01:52.750+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:52.750+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:01:52.761+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:52.760+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:01:52.763+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:52.763+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:01:52.764+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:01:52.764+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:01:52.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.397 seconds
+[2024-02-28T08:02:23.605+0000] {processor.py:161} INFO - Started process (PID=432) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:02:23.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:02:23.607+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:23.607+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:02:23.944+0000] {processor.py:840} INFO - DAG(s) 'hourly', 'vnstock-pipeline-quarterly', 'vnstock-pipeline-daily' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:02:23.959+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:23.959+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:02:23.970+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:23.969+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:02:23.972+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:23.972+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:02:23.973+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:23.973+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:02:23.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.379 seconds
+[2024-02-28T08:02:54.776+0000] {processor.py:161} INFO - Started process (PID=499) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:02:54.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:02:54.778+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:54.777+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:02:55.268+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-quarterly', 'hourly', 'vnstock-pipeline-daily' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:02:55.285+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:55.284+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:02:55.297+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:55.297+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:02:55.300+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:55.299+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:02:55.301+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:02:55.301+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:02:55.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.536 seconds
+[2024-02-28T08:03:25.379+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:03:25.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:03:25.382+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:25.381+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:03:26.007+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-quarterly', 'hourly', 'vnstock-pipeline-daily' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:03:26.028+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:26.028+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:03:26.064+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:26.063+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:03:26.067+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:26.067+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:03:26.069+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:26.069+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:03:26.079+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.705 seconds
+[2024-02-28T08:03:56.425+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:03:56.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:03:56.429+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:56.428+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:03:56.803+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-quarterly', 'hourly', 'vnstock-pipeline-daily' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:03:56.817+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:56.817+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:03:56.827+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:56.826+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:03:56.829+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:56.829+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:03:56.830+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:03:56.830+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:03:56.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.418 seconds
+[2024-02-28T08:04:27.471+0000] {processor.py:161} INFO - Started process (PID=701) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:04:27.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:04:27.474+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:27.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:04:27.817+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-quarterly', 'vnstock-pipeline-daily', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:04:27.831+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:27.831+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:04:27.842+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:27.842+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:04:27.844+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:27.844+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:04:27.845+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:27.845+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:04:27.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.388 seconds
+[2024-02-28T08:04:58.722+0000] {processor.py:161} INFO - Started process (PID=768) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:04:58.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:04:58.725+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:58.724+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:04:59.068+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-daily', 'hourly', 'vnstock-pipeline-quarterly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:04:59.084+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:59.084+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:04:59.095+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:59.095+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:04:59.097+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:59.097+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:04:59.099+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:04:59.098+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:04:59.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.389 seconds
+[2024-02-28T08:05:29.813+0000] {processor.py:161} INFO - Started process (PID=836) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:05:29.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:05:29.816+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:29.816+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:05:30.221+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-daily', 'vnstock-pipeline-quarterly', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:05:30.237+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:30.236+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:05:30.248+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:30.248+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:05:30.252+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:30.252+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:05:30.253+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:05:30.253+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:05:30.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.454 seconds
+[2024-02-28T08:06:01.065+0000] {processor.py:161} INFO - Started process (PID=911) to work on /opt/airflow/dags/main.py
+[2024-02-28T08:06:01.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-02-28T08:06:01.068+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:01.067+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-02-28T08:06:01.399+0000] {processor.py:840} INFO - DAG(s) 'vnstock-pipeline-daily', 'vnstock-pipeline-quarterly', 'hourly' retrieved from /opt/airflow/dags/main.py
+[2024-02-28T08:06:01.413+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:01.413+0000] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-28T08:06:01.423+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:01.423+0000] {dag.py:3823} INFO - Setting next_dagrun for hourly to 2024-02-28 08:00:00+00:00, run_after=2024-02-29 03:00:00+00:00
+[2024-02-28T08:06:01.426+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:01.426+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-daily to 2024-02-26 09:00:00+00:00, run_after=2024-02-27 09:00:00+00:00
+[2024-02-28T08:06:01.427+0000] {logging_mixin.py:188} INFO - [2024-02-28T08:06:01.427+0000] {dag.py:3823} INFO - Setting next_dagrun for vnstock-pipeline-quarterly to 2024-03-01 08:00:00+00:00, run_after=2024-03-08 08:00:00+00:00
+[2024-02-28T08:06:01.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.373 seconds

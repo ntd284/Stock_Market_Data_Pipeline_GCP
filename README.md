@@ -143,16 +143,27 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 5. **Reference:**
 [1] [How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04).
+
 [2] [Pyspark through Dataproc GCP using Airflow](https://ilhamaulanap.medium.com/data-lake-with-pyspark-through-dataproc-gcp-using-airflow-d3d6517f8168).
+
 [3] [Install Airflow on Docker](https://www.youtube.com/watch?v=aTaytcxy2Ck&t=318s).
+
 [4] [Airflow apache setup](https://github.com/apache/airflow).
+
 [5] [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/).
+
 [6] [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances).
+
 [7] [Cloud Storage documentation](https://cloud.google.com/storage/docs).
+
 [8] [BigQuery documentation](https://cloud.google.com/bigquery/docs).
+
 [9] [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs).
+
 [10] [Cloud Functions documentation](https://cloud.google.com/functions/docs).
+
 [11] [Looker Studio](https://developers.google.com/looker-studio).
+
 [12] [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html).
 
 

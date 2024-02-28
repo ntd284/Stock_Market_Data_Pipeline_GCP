@@ -1,0 +1,19 @@
+[2024-02-28T08:00:01.462+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hourly.vnstock-pipeline-hourly scheduled__2024-02-28T07:00:00+00:00 [queued]>
+[2024-02-28T08:00:01.465+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hourly.vnstock-pipeline-hourly scheduled__2024-02-28T07:00:00+00:00 [queued]>
+[2024-02-28T08:00:01.466+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2024-02-28T08:00:01.471+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): vnstock-pipeline-hourly> on 2024-02-28 07:00:00+00:00
+[2024-02-28T08:00:01.475+0000] {standard_task_runner.py:60} INFO - Started process 120 to run task
+[2024-02-28T08:00:01.477+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'hourly', 'vnstock-pipeline-hourly', 'scheduled__2024-02-28T07:00:00+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpgi82sgpv']
+[2024-02-28T08:00:01.478+0000] {standard_task_runner.py:88} INFO - Job 45: Subtask vnstock-pipeline-hourly
+[2024-02-28T08:00:01.508+0000] {task_command.py:423} INFO - Running <TaskInstance: hourly.vnstock-pipeline-hourly scheduled__2024-02-28T07:00:00+00:00 [running]> on host eb3fd3a6cdd8
+[2024-02-28T08:00:01.556+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong_' AIRFLOW_CTX_DAG_ID='hourly' AIRFLOW_CTX_TASK_ID='vnstock-pipeline-hourly' AIRFLOW_CTX_EXECUTION_DATE='2024-02-28T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-28T07:00:00+00:00'
+[2024-02-28T08:00:01.963+0000] {logging_mixin.py:188} INFO - {'ticker': 'FPT', 'time': '2024-02-28 14:45:01', 'price': 108500.0}
+[2024-02-28T08:00:02.290+0000] {logging_mixin.py:188} INFO - publish message id 9533751238991878
+[2024-02-28T08:00:02.647+0000] {logging_mixin.py:188} INFO - {'ticker': 'VIC', 'time': '2024-02-28 14:45:01', 'price': 45600.0}
+[2024-02-28T08:00:02.744+0000] {logging_mixin.py:188} INFO - publish message id 9533753816498410
+[2024-02-28T08:00:03.124+0000] {logging_mixin.py:188} INFO - {'ticker': 'SHB', 'time': '2024-02-28 14:45:02', 'price': 11900.0}
+[2024-02-28T08:00:03.213+0000] {logging_mixin.py:188} INFO - publish message id 9533752053031473
+[2024-02-28T08:00:03.216+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-28T08:00:03.247+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=hourly, task_id=vnstock-pipeline-hourly, execution_date=20240228T070000, start_date=20240228T080001, end_date=20240228T080003
+[2024-02-28T08:00:03.282+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-28T08:00:03.300+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
