@@ -10,11 +10,11 @@ Follow the steps below to setup and run this ETL pipeline.
 
 ### Prerequisites and Modules
 
-Before setting up and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
+Before setup and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
 
-1. **Apache Airflow Installation (version 2.8.1):** Make sure you have `Apache Airflow` correctly installed on your virtual machine. 
+1. **Apache Airflow Installation(version 2.8.1):** Make sure you have `Apache Airflow` correctly installed on your virtual machine. 
 
-2. **Docker(version 24.0.2) and Docker compose (version 2.19.1):** Make sure you have `Docker` and `Docker compose` correctly installed on your virtual machine.
+2. **Docker(version 24.0.2) and Docker compose(version 2.19.1):** Make sure you have `Docker` and `Docker compose` correctly installed on your virtual machine.
 
 3. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. 
 
@@ -100,6 +100,10 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 - **Scheduler:** Weekly at 4pm every Friday.
 
 - **Task:** The system gathers a year's worth of data and stores in `Google Cloud Storage`. Use `pySpark` and `Dataproc` to process data from `Google Cloud Storage`, then compute the most consistency growing stock codes over the lastest quarter, where stability is defined by an average index increase within a 10% amplitude range and the least volume is 1000 stocks everydays. The results are then sent to `Bigquery` for advanced analysis.
+
+**Dataproc Job:** Manage job sent from VM to dataproc.
+
+![logfile in dataproc](doc/images/dataproc.png)
 
 **Bigquery:** received and presented data.
 
