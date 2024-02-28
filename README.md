@@ -142,6 +142,7 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 ![Alt text](doc/images/looker-hourly.png)
 
 5. **Reference:**
+
 [1] [How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04).
 
 [2] [Pyspark through Dataproc GCP using Airflow](https://ilhamaulanap.medium.com/data-lake-with-pyspark-through-dataproc-gcp-using-airflow-d3d6517f8168).
