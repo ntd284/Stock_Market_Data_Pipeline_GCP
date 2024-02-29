@@ -141,7 +141,11 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 ![Alt text](doc/images/looker-3m.png)
 ![Alt text](doc/images/looker-hourly.png)
 
-5. **Reference:**
+5. **Summary:**
+
+This project details constructing an Apache Airflow-managed ETL pipeline for VN-Stock Market analysis, pulling data from stock APIs, processing it, and storing it in a data warehouse for business insights. It includes setup instructions, prerequisites like Docker and Airflow installation, and configuration steps for Google Cloud Services. The pipeline features DAGs for daily, hourly, and yearly stock data processing, integrating with BigQuery for storage and analysis, and utilizes Data Studio for visualization of stock trends and performance metrics.
+
+6. **Reference:**
 
 [1] [How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04).
 
