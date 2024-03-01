@@ -84,7 +84,7 @@ with DAG(
     )
 with DAG(
         default_args=default_args,
-        dag_id="hourly",
+        dag_id="vnstock-pipeline-hourly",
         schedule_interval='0 10,11,14,15 * * 1-5',
         catchup=False
 ) as dag_SD:
